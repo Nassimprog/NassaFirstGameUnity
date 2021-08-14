@@ -182,7 +182,12 @@ public class RubyController : MonoBehaviour
                             if (FixedRobots >= character.FixRobotRequirement)
                             {
                                 character.DisplayDialog2();
-
+                                Debug.Log("wtf");
+                                if (HasCrowbar == false)
+                                    {
+                                        HasCrowbar = true;
+                                        PlaySound(collectedClip);
+                                    }
 
                             }
                             else
