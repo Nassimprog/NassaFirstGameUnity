@@ -6,23 +6,25 @@ public class Boss : MonoBehaviour
 {
     public float speed;
     public int health = 1;
-    public bool vertical;
     public float changeTime = 3.0f;
+    public bool Vertical = false;
     public int damage = 1;
     public float timeInvincible = 0.0f;
+    bool flip = false;
     bool isInvincible;
     float invincibleTimer;
     public ParticleSystem smokeEffect;
 
     new Rigidbody2D rigidbody2D; // new added to remove warning
     float timer;
-    int direction = 1;
+    int horizontal = 1;
     bool broken = true;
 
     Animator animator;
 
-
-
+    Rigidbody2D rigidbody2d;
+    Vector2 lookDirection = new Vector2(1, 0);
+    public GameObject ProjectilePrefab;
 
 
     // Start is called before the first frame update
@@ -48,9 +50,23 @@ public class Boss : MonoBehaviour
         timer -= Time.deltaTime;
 
         if (timer < 0)
-        {
-            direction = -direction;
-            timer = changeTime;
+        {   
+            if(flip)
+            {
+                horizontal = -horizontal;
+                timer = changeTime;
+                Vertical = !Vertical;
+                flip = false;
+            }
+            else
+            {
+                
+                timer = changeTime;
+                Vertical = !Vertical;
+                //Launch();
+                flip = true;
+            }
+           
         }
 
         if (isInvincible)
@@ -72,20 +88,29 @@ public class Boss : MonoBehaviour
 
         Vector2 position = rigidbody2D.position;
 
-        if (vertical)
+        
+        if(Vertical)
         {
-            position.y = position.y + Time.deltaTime * speed * direction;
+            position.y = position.y + Time.deltaTime * speed * horizontal;
             animator.SetFloat("Move X", 0);
-            animator.SetFloat("Move Y", direction);
+            animator.SetFloat("Move Y", horizontal);
+            
         }
+        
+        
         else
         {
-            position.x = position.x + Time.deltaTime * speed * direction;
-            animator.SetFloat("Move X", direction);
+            position.x = position.x + Time.deltaTime * speed * horizontal;
+            animator.SetFloat("Move X", horizontal);
             animator.SetFloat("Move Y", 0);
+            
+            
         }
 
         rigidbody2D.MovePosition(position);
+
+
+
     }
 
     void OnCollisionStay2D(Collision2D other)
@@ -133,4 +158,13 @@ public class Boss : MonoBehaviour
 
 
     }
+
+   // void Launch()
+   // {
+   //         GameObject projectileObject = Instantiate(ProjectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+
+   //         Projectile projectile = projectileObject.GetComponent<Projectile>();
+   //         projectile.Launch(lookDirection, 300);
+   // }
+
 }
