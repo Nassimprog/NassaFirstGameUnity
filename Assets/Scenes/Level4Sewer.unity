@@ -15114,7 +15114,7 @@ PrefabInstance:
       objectReference: {fileID: 1321564699}
     - target: {fileID: 2548569451153252244, guid: 74aa37f104d66a34cb983be682acc5ff, type: 3}
       propertyPath: FixRobotRequirement
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6131796477905024569, guid: 74aa37f104d66a34cb983be682acc5ff, type: 3}
       propertyPath: m_Name

@@ -37,6 +37,7 @@ public class Projectile : MonoBehaviour
         EnemyController e = other.collider.GetComponent<EnemyController>();
         NonPlayerCharacter n = other.collider.GetComponent<NonPlayerCharacter>();
         Box b = other.collider.GetComponent<Box>();
+        Boss boss = other.collider.GetComponent<Boss>();
 
         if (e != null) //if cog hits enemy
         {
@@ -45,6 +46,15 @@ public class Projectile : MonoBehaviour
                 e.Fix();
             
             
+        }
+
+        if (boss != null) //if cog hits enemy
+        {
+            boss.ChangeHealth(-1);
+            if (boss.health == 0)
+                boss.Fix();
+
+
         }
 
         if (n != null)

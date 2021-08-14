@@ -49,13 +49,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7eae828b84e62d4a9071bb3459d0ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 10
   health: 10
-  changeTime: 3
+  changeTime: 2
   Vertical: 1
   damage: 1
-  timeInvincible: 0
-  smokeEffect: {fileID: 0}
+  timeInvincible: 2
+  smokeEffect: {fileID: 4421115862156458095}
+  target: {fileID: 0}
+  ProjectilePrefab: {fileID: 2028599332728798677, guid: 0ffcae94d2c8dd146b0611514f8da9e7, type: 3}
 --- !u!212 &4421115861408852460
 SpriteRenderer:
   m_ObjectHideFlags: 0

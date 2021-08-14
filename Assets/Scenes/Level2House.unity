@@ -15119,6 +15119,10 @@ PrefabInstance:
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1118852604}
+    - target: {fileID: 14010509037947300, guid: 23801b1412b65a14eb86629ceb032989, type: 3}
+      propertyPath: FixRobotRequirement
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 3217270625184796049, guid: 23801b1412b65a14eb86629ceb032989, type: 3}
       propertyPath: m_Size.x
       value: 0.82027674
@@ -16859,7 +16863,7 @@ PrefabInstance:
       objectReference: {fileID: 746027454}
     - target: {fileID: 2597165762279505292, guid: b26d5b78748e3014f9eb99b933cf4816, type: 3}
       propertyPath: HasCrowbar
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2597165762279505292, guid: b26d5b78748e3014f9eb99b933cf4816, type: 3}
       propertyPath: HealEffect

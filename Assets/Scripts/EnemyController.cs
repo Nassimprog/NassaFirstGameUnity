@@ -60,6 +60,11 @@ public class EnemyController : MonoBehaviour
                 isInvincible = false;
         }
 
+        if (health == 0)
+        {
+            Fix();
+        }
+
     }
 
     void FixedUpdate()
