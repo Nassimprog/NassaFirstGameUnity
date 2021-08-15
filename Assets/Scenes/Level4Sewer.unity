@@ -15079,10 +15079,10 @@ PrefabInstance:
       value: 'Hehehehehe.
 
         So now you know! The robots are self aware that
-        they are in a siumulation! Just like us
+        they are in a simulation! Just like us
 
-        but I still have a very
-        big surprise for you, Ruby!'
+        but I still have a very big
+        surprise for you, Ruby!'
       objectReference: {fileID: 0}
     - target: {fileID: 274062516, guid: 74aa37f104d66a34cb983be682acc5ff, type: 3}
       propertyPath: m_fontSize
