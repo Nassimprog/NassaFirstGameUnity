@@ -12428,7 +12428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611227171761916675, guid: 5fe4bd20788678c4f95d1ad5c02ad834, type: 3}
       propertyPath: vertical
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2611227171761916675, guid: 5fe4bd20788678c4f95d1ad5c02ad834, type: 3}
       propertyPath: timeInvincible
@@ -12444,11 +12444,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5350716932683305889, guid: 5fe4bd20788678c4f95d1ad5c02ad834, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.04
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 5350716932683305889, guid: 5fe4bd20788678c4f95d1ad5c02ad834, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.29
+      value: -7.71
       objectReference: {fileID: 0}
     - target: {fileID: 5350716932683305889, guid: 5fe4bd20788678c4f95d1ad5c02ad834, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15114,7 +15114,7 @@ PrefabInstance:
       objectReference: {fileID: 1321564699}
     - target: {fileID: 2548569451153252244, guid: 74aa37f104d66a34cb983be682acc5ff, type: 3}
       propertyPath: FixRobotRequirement
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6131796477905024569, guid: 74aa37f104d66a34cb983be682acc5ff, type: 3}
       propertyPath: m_Name
@@ -15610,6 +15610,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3003607235758039025, guid: 469229da4a7f4a740a7a20ef09793722, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 8167688774532018805, guid: e5fcccca8182f0248a1cc831a45d8005, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 469229da4a7f4a740a7a20ef09793722, type: 3}
 --- !u!1 &1575812047 stripped

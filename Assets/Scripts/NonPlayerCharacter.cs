@@ -7,7 +7,7 @@ public class NonPlayerCharacter : MonoBehaviour
     public float displayTime = 4.0f;
     public GameObject dialogBox;
     public GameObject dialogBox2;
-    float timerDisplay;
+    public float timerDisplay;
     public int NPCType;
     public int FixRobotRequirement;
     
@@ -28,6 +28,7 @@ public class NonPlayerCharacter : MonoBehaviour
 
     void Update()
     {
+        
         if (timerDisplay >= 0)
         {
             timerDisplay -= Time.deltaTime;
@@ -51,8 +52,14 @@ public class NonPlayerCharacter : MonoBehaviour
     }
     public void DisplayDialog2()
     {
-        timerDisplay = displayTime;
-        dialogBox2.SetActive(true);
+        if (RubyController.FixedRobots >= FixRobotRequirement)
+        {
+            timerDisplay = displayTime;
+            dialogBox2.SetActive(true);
+        }
+        else
+            DisplayDialog();
+        
         
 
     }

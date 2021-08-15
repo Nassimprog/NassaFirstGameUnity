@@ -14,7 +14,7 @@ public class HealthCollectible : MonoBehaviour
         if (controller != null)
         {
 
-            if (controller.HasHealthSatchel && controller.health == controller.maxHealth)
+            if (RubyController.HasHealthSatchel && controller.health == controller.maxHealth)
             {
                 controller.AddExtraHealth(Heal);
                 ExtraHealthDisplay.instance.SetExtraHealth(Heal);

@@ -14,8 +14,8 @@ public class RubyController : MonoBehaviour
     public static int FixedRobots = 0;
     public static int ExtraHealth = 0;
 
-    public bool HasCrowbar = false;
-    public bool HasHealthSatchel = false;
+    public static bool HasCrowbar = false;
+    public static bool HasHealthSatchel = false;
     
 
 
@@ -54,6 +54,7 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
         PauseMenu.isPaused = false;
+        
     }
 
     public void PlaySound(AudioClip clip) //Audio
@@ -112,7 +113,10 @@ public class RubyController : MonoBehaviour
                     NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
                     if (character != null)
                     {
-
+                        if(character.NPCType == 1)
+                        {
+                            character.DisplayDialog();
+                        }
 
                         if (character.NPCType == 2)
                         {
@@ -142,6 +146,8 @@ public class RubyController : MonoBehaviour
 
 
                             }
+                            else
+                                character.DisplayDialog();
 
                         }
 
@@ -157,6 +163,8 @@ public class RubyController : MonoBehaviour
                                 }
 
                             }
+                            else
+                                character.DisplayDialog();
                         }
 
                         
@@ -175,23 +183,29 @@ public class RubyController : MonoBehaviour
 
                         if (character.NPCType == 5)
                         {
+                            
+                            if (FixedRobots >= character.FixRobotRequirement)
+                            {
+                                character.dialogBox.SetActive(false);
+                                character.dialogBox2.SetActive(true);
+                                character.timerDisplay = character.displayTime;
+                                if (HasCrowbar == false)
+                                {
+                                    HasCrowbar = true;
+                                    PlaySound(collectedClip);
+                                }
+                                
+                            }
+
+                            else
+                                character.DisplayDialog();
 
                             if (ExtraHealth < 2)
                                 AddExtraHealth(2);
 
-                            if (FixedRobots >= character.FixRobotRequirement)
-                            {
-                                character.DisplayDialog2();
-                                Debug.Log("wtf");
-                                if (HasCrowbar == false)
-                                    {
-                                        HasCrowbar = true;
-                                        PlaySound(collectedClip);
-                                    }
+                            
 
-                            }
-                            else
-                                character.DisplayDialog(); // can only have one else statement for this
+
 
                         }
 
@@ -200,8 +214,7 @@ public class RubyController : MonoBehaviour
                             AddAmmo(10 - ammo);
                             AmmoDisplay.instance.SetAmmo(ammo);
                         }
-                        else
-                            character.DisplayDialog();
+                        
                     }
                     
 

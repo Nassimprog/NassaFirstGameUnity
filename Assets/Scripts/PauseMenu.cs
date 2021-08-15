@@ -46,6 +46,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
         isPaused = false;
+        
+        RubyController.ammo = 3;
+        RubyController.ExtraHealth = 0;
+        RubyController.FixedRobots = 0;
     }
 
     public void QuitGame()

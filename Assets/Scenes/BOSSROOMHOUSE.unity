@@ -14792,7 +14792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2548569451153252244, guid: 74aa37f104d66a34cb983be682acc5ff, type: 3}
       propertyPath: FixRobotRequirement
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6131796477905024569, guid: 74aa37f104d66a34cb983be682acc5ff, type: 3}
       propertyPath: m_Name
@@ -15242,7 +15242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527450129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5000005, y: 2.9200008, z: -10}
+  m_LocalPosition: {x: -7.58065, y: 5.8973413, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1057561853}
@@ -15954,7 +15954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830128936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.5000005, y: 2.9200008, z: -10}
+  m_LocalPosition: {x: -14.090001, y: 5.830001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1429472022}
@@ -16419,6 +16419,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 746027454}
     - target: {fileID: 2597165762279505292, guid: b26d5b78748e3014f9eb99b933cf4816, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597165762279505292, guid: b26d5b78748e3014f9eb99b933cf4816, type: 3}
       propertyPath: HasCrowbar
       value: 1
       objectReference: {fileID: 0}
@@ -16452,11 +16456,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6448403583089029699, guid: b26d5b78748e3014f9eb99b933cf4816, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.47
+      value: -14.06
       objectReference: {fileID: 0}
     - target: {fileID: 6448403583089029699, guid: b26d5b78748e3014f9eb99b933cf4816, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.64
+      value: 5.55
       objectReference: {fileID: 0}
     - target: {fileID: 6448403583089029699, guid: b26d5b78748e3014f9eb99b933cf4816, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16577,7 +16581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8621379561508024108, guid: 2ebd8cdddf5f12c42ab7073f3fb9f064, type: 3}
       propertyPath: RequiredRobots
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ebd8cdddf5f12c42ab7073f3fb9f064, type: 3}
