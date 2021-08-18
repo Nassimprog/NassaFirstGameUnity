@@ -25,7 +25,7 @@ public class RubyController : MonoBehaviour
 
     public int health { get { return currentHealth; } }
     int currentHealth;
-
+    public GameObject HPUI;
     
     bool isInvincible;
     float invincibleTimer;
@@ -141,6 +141,7 @@ public class RubyController : MonoBehaviour
                                 {
                                     HasHealthSatchel = true;
                                     PlaySound(collectedClip);
+                                    
                                 }
 
 

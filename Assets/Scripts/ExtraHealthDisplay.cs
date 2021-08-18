@@ -6,15 +6,30 @@ using UnityEngine.UI;
 public class ExtraHealthDisplay : MonoBehaviour
 {
 
-    public Transform extraHealthDisplay;
+    public GameObject extraHealthDisplay;
+    public GameObject ExtraHealthCounter;
     public static ExtraHealthDisplay instance { get; private set; }
 
 
     private void Awake()
     {
+
         instance = this;
         GetComponent<Text>().text = RubyController.ExtraHealth.ToString();
-       
+        if (RubyController.HasHealthSatchel)
+        {
+            extraHealthDisplay.gameObject.SetActive(true);
+            ExtraHealthCounter.gameObject.SetActive(true);
+            
+        }
+        
+       else
+        {
+            extraHealthDisplay.gameObject.SetActive(false);
+            ExtraHealthCounter.gameObject.SetActive(false);
+        }
+            
+            
 
     }
 
@@ -28,7 +43,7 @@ public class ExtraHealthDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
 
     }
 
