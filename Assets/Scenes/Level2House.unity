@@ -12828,9 +12828,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327.37997, y: 18.680004}
+  m_AnchoredPosition: {x: 343.51, y: 16.384949}
   m_SizeDelta: {x: 41.024933, y: 41.024933}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &748640312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12904,8 +12904,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 266.3, y: -7.647625}
-  m_SizeDelta: {x: 87.04379, y: 64.78731}
+  m_AnchoredPosition: {x: 221.4, y: -7.647625}
+  m_SizeDelta: {x: 42.144424, y: 39.92324}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &770190802
 MonoBehaviour:
@@ -14485,7 +14485,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1424928654}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: GoToMainMenu
         m_Mode: 1
@@ -15286,7 +15286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 447, y: -6.8}
+  m_AnchoredPosition: {x: 462.8, y: -6.8003}
   m_SizeDelta: {x: 51.247253, y: 40.770576}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1496459415
@@ -15599,7 +15599,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1424928654}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -16304,7 +16304,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1424928654}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
