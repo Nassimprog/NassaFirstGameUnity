@@ -13,24 +13,17 @@ public class ExtraHealthDisplay : MonoBehaviour
 
     private void Awake()
     {
-
+        // have it always set active but hide it unless its availiable
         instance = this;
         GetComponent<Text>().text = RubyController.ExtraHealth.ToString();
+        extraHealthDisplay.gameObject.SetActive(false);
+        ExtraHealthCounter.gameObject.SetActive(false);
         if (RubyController.HasHealthSatchel)
         {
             extraHealthDisplay.gameObject.SetActive(true);
             ExtraHealthCounter.gameObject.SetActive(true);
-            
-        }
-        
-       else
-        {
-            extraHealthDisplay.gameObject.SetActive(false);
-            ExtraHealthCounter.gameObject.SetActive(false);
-        }
-            
-            
 
+        }
     }
 
     // Start is called before the first frame update
@@ -46,8 +39,11 @@ public class ExtraHealthDisplay : MonoBehaviour
         
 
     }
-
-
+    public void ShowUI()
+    {
+        extraHealthDisplay.gameObject.SetActive(true);
+        ExtraHealthCounter.gameObject.SetActive(true);
+    }
     public void SetExtraHealth(int value)
     {
         GetComponent<Text>().text = RubyController.ExtraHealth.ToString();

@@ -27,13 +27,14 @@ public class RubyController : MonoBehaviour
     int currentHealth;
     public GameObject HPUI;
     
+
     bool isInvincible;
     float invincibleTimer;
 
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
-
+    public GameObject[] HPDisplay;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -141,7 +142,7 @@ public class RubyController : MonoBehaviour
                                 {
                                     HasHealthSatchel = true;
                                     PlaySound(collectedClip);
-                                    
+                                    ExtraHealthDisplay.instance.ShowUI();
                                 }
 
 

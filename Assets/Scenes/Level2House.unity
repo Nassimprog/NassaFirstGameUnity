@@ -12807,7 +12807,7 @@ GameObject:
   - component: {fileID: 748640312}
   m_Layer: 5
   m_Name: ExtraHealthImage
-  m_TagString: Untagged
+  m_TagString: HPUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13090,7 +13090,7 @@ PrefabInstance:
     - target: {fileID: 5556671674971276476, guid: 1a46f17844f196742957ba255c7b15cc, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2620648941913848260, guid: 10eec0b816c4f294e822b501fab86897, type: 3}
     - target: {fileID: 8432459128799334556, guid: 1a46f17844f196742957ba255c7b15cc, type: 3}
       propertyPath: m_Name
       value: MetalCube (3)
@@ -13358,7 +13358,7 @@ PrefabInstance:
     - target: {fileID: 5556671674971276476, guid: 1a46f17844f196742957ba255c7b15cc, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2620648941913848260, guid: 10eec0b816c4f294e822b501fab86897, type: 3}
     - target: {fileID: 8432459128799334556, guid: 1a46f17844f196742957ba255c7b15cc, type: 3}
       propertyPath: m_Name
       value: MetalCube (4)
@@ -13590,7 +13590,7 @@ PrefabInstance:
     - target: {fileID: 5556671674971276476, guid: 1a46f17844f196742957ba255c7b15cc, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2620648941913848260, guid: 10eec0b816c4f294e822b501fab86897, type: 3}
     - target: {fileID: 8432459128799334556, guid: 1a46f17844f196742957ba255c7b15cc, type: 3}
       propertyPath: m_Name
       value: MetalCube (5)
@@ -14152,7 +14152,7 @@ PrefabInstance:
       objectReference: {fileID: 1118852604}
     - target: {fileID: 14010509037947300, guid: 23801b1412b65a14eb86629ceb032989, type: 3}
       propertyPath: FixRobotRequirement
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3217270625184796049, guid: 23801b1412b65a14eb86629ceb032989, type: 3}
       propertyPath: m_Size.x
@@ -15265,7 +15265,7 @@ GameObject:
   - component: {fileID: 1496459415}
   m_Layer: 5
   m_Name: HealthCounter
-  m_TagString: Untagged
+  m_TagString: HPUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
